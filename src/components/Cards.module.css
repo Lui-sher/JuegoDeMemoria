@@ -1,0 +1,10 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.componenteCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

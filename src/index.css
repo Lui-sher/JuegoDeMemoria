@@ -1,4 +1,10 @@
 body {
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/177/453/191/hexagon-green-tiled-minimalism-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-color: #30ff1e;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
