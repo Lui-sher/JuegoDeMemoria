@@ -1,6 +1,12 @@
 # Juego de Memoria
 
+<p align="left">
+  <img height="500" src="./src/Inicio.png" />
+</p>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed en (https://juego-de-memoria-three.vercel.app/)
 
 ## Descripcion
 
