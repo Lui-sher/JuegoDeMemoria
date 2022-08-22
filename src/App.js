@@ -1,4 +1,4 @@
-import Card from "./components/Card";
+// import Card from "./components/Card";
 import Cards from "./components/Cards"
 import style from "./components/App.module.css";
 import React, { useState } from "react";
@@ -29,13 +29,13 @@ export default function App() {
       allPokemon.push({
         name: pokemonInfo.name,
         id: pokemonInfo.id,
-        image: pokemonInfo.sprites.other.home.front_default,
+        image: pokemonInfo.sprites.other["official-artwork"].front_default,
         front: "cardA"
       })
       allPokemon.push({
         name: pokemonInfo.name,
         id: pokemonInfo.id,
-        image: pokemonInfo.sprites.other.home.front_default,
+        image: pokemonInfo.sprites.other["official-artwork"].front_default,
         front: "cardA"
       })
     }
@@ -52,28 +52,12 @@ export default function App() {
 
   return (
     <div className={style.global}>
-          <h3>JUEGO DE MEMORIA</h3>
-          <hr className={style.barraH}/>
           <div className={style.general}>
               <div className={style.cardComponent}>
-                  <h3> Carta de Muestra </h3>
-                  <div className={style.contenedorCard}>
-                      <Card
-                      front = {"cardA"}
-                      handleChange = {()=>alert("Esta Card es de prueba")}
-                      />
-                    
-                      <Card 
-                        name={"ARCEUS"}
-                        image={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/493.png"}
-                        handleChange = {()=>alert("Esta Card es de prueba")}
-                        front ={"cardB"}
-                      />
-
-                  </div>
-                  <button className={style.boton} onClick={()=>{CargarPokemon()}}>Iniciar Juego</button>
+                  <h3>JUEGO DE MEMORIA</h3>
+                  <button className={style.boton} onClick={e => { e.preventDefault(); CargarPokemon()}}>Iniciar Juego</button>
               </div>
-              <hr className={style.barraV}/>
+              <hr className={style.barraH}/>
               <div className={style.cardsComponent}>
                   <div className={style.cardsContenedor}>
                       <div className={style.contenedorCard}>

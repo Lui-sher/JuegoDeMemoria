@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .cardsContenedor {
     display: flex;
     justify-content: center;
@@ -20,13 +21,18 @@
 
 .general {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cardComponent {
     display: flex;
-    flex-direction: column;
+    width: 480px;
     align-items: center;
-    width: 260px;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .boton {
@@ -35,14 +41,15 @@
     font-size: 20px;
     width: 120px;
     height: 70px;
-        border-color: #000000;
-        color: rgb(0, 0, 0);
-        box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 rgb(255, 0, 0);
-        -webkit-transition: all 150ms ease-in-out;
-        transition: all 150ms ease-in-out;
+    border-radius: 10px;
+    border-color: #000000;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 40px 40px yellow inset, 0 0 0 0 rgb(255, 0, 0);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 .boton:hover {
-        box-shadow: 0 0 10px 0 #0800ff inset, 0 0 10px 4px rgb(242, 255, 0);
+        box-shadow: 0 0 10px 0 black inset, 0 0 10px 4px rgb(242, 255, 0);
 
     /* width: 147px;
     height: 90px;
@@ -59,7 +66,7 @@
 }
 
 .cardsComponent {
-    width: 560px;
+    width: 653px;
 }
 .barraH {
     height: 0px;

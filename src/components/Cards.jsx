@@ -27,10 +27,6 @@ export default function Cards({allPokemon, setDatosDeJuego, datosDeJuego}){
                     setPokeDatos({...pokeDatos, card: []})
                     setDatosDeJuego({...datosDeJuego, puntos: (datosDeJuego.puntos+1)})
                     
-                    if(datosDeJuego.puntos === 5){
-                     alert("Ganaste el Juego")
-                    }
-
                 }else{
                     setPokeDatos({
                         ...pokeDatos, 
@@ -49,9 +45,6 @@ export default function Cards({allPokemon, setDatosDeJuego, datosDeJuego}){
                 allPokemon[pokeDatos.card[1]].front = "cardA"
                 setPokeDatos({...pokeDatos, card:[posicion]})
             }
-        } else {
-            if(datosDeJuego.puntos === 6) alert("Ganaste")
-            if(datosDeJuego.intentos === 0) alert("fin del juego")
         }
     }
 
@@ -71,10 +64,17 @@ export default function Cards({allPokemon, setDatosDeJuego, datosDeJuego}){
 
     return (
         <div className={style.componenteCards}>
-            <h3>{datosDeJuego.intentos} INTENTOS RESTANTES</h3>
-            <h3>PUNTOS GANADOS {datosDeJuego.puntos}</h3>
+            <div className={style.states}>
+                <h5>INTENTOS RESTANTES  </h5>
+                {datosDeJuego.intentos}
+                <h5>PUNTOS GANADOS </h5>
+                {datosDeJuego.puntos}
+            </div>
+            
             <div className={style.cards}>
                 {resultado}
+                {datosDeJuego.intentos === 0 ? <div className={style.alert}>No tienes mas Intentos!! Fin del juego</div>: null}
+                {datosDeJuego.puntos === 6 ? <div className={style.alert}>Ganaste el juego!!</div>: null}
             </div>
         </div>
     )
