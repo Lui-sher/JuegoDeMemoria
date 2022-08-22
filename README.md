@@ -5,8 +5,8 @@
 </p>
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Deployed en (https://juego-de-memoria-three.vercel.app/)
+<p>This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).</p>
+<p>Deployed en (https://juego-de-memoria-three.vercel.app/)</p>
 
 ## Descripcion
 
